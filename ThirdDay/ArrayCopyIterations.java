@@ -1,4 +1,4 @@
-/*
+package ThirdDay;/*
 Declare and initialize an array with four arbitrary whole numbers.
 Write a Java program to copy this array by iterating it.
  */

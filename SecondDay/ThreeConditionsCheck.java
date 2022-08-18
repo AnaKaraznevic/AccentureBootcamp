@@ -1,4 +1,4 @@
-/*
+package SecondDay;/*
 Write a program which asks the user to input two whole numbers a and b. Output "true", if one of this condition is true:
     1) a and b is equal
     2) a is less than 0 and b is greater than 0
@@ -24,10 +24,10 @@ public class ThreeConditionsCheck {
         numberA = input.nextInt();
         System.out.println("Enter whole number b:");
         numberB = input.nextInt();
-        answer = CheckingThreeConditions(numberA,numberB);
+        answer = checkingThreeConditions(numberA,numberB);
         System.out.println("a is " + numberA + " and b is " + numberB + " -> " + answer);
     }
-    static boolean CheckingThreeConditions (int numberA, int numberB){
+    static boolean checkingThreeConditions (int numberA, int numberB){
         if ((numberA == numberB) || ((numberA < 0) && (numberB >0)) || ((numberA > 100) && (numberB >100))){
             return true;
         }

@@ -1,4 +1,4 @@
-/*
+package ThirdDay;/*
 Write a program which creates two dimensional
 // array and stores a multiplication table (from 1 - 10) in it.
     Example of output:
@@ -23,7 +23,7 @@ public class MultiplicationTable {
 
     public static void calculateMultiplicationTable (int[][] table) {
         for (int i = 0; i < table.length; i++){
-            for (int j = 0; j < table[i].length; j++){
+            for (int j = 0; j < table[i].length ; j++){
                 table[i][j] = (i+1)*(j+1);
             }
         }

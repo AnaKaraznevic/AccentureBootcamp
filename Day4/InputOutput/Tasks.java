@@ -1,11 +1,14 @@
 package Day4.InputOutput;
 
 import java.io.*;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.attribute.FileTime;
+import java.sql.SQLOutput;
 
 public class Tasks {
-    public static void main (String[] args){
+    public static void main (String[] args) throws IOException{
 
         //Task1
         File file1 = new File("/Users/ania/Documents");
@@ -57,6 +60,37 @@ public class Tasks {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
+        //Task7
+        FileTime fileTime;
+        try{
+            fileTime = Files.getLastModifiedTime(path1);
+            System.out.println(fileTime);
+        } catch (IOException e){
+            System.out.println(e);
+        }
+
+        //Task8
+        BufferedReader R = new BufferedReader(new InputStreamReader(System.in));
+        /*
+        System.out.println("Enter your name: ");
+        String name = R.readLine();
+        System.out.println("Your name is: " + name);
+        */
+
+        //Task9
+        long sizeInBytes = Files.size(path1);
+        double sizeInKB = (double)sizeInBytes/1024;
+        double sizeInMB = sizeInKB/1024;
+        System.out.println("The file size in bytes: " + sizeInBytes);
+        System.out.println("The file size in kB: " + sizeInKB);
+        System.out.println("The file size in MB: " + sizeInMB);
+
+        //Task10
+        FileInputStream input = new FileInputStream(stringPath1);
+        byte[] arrayFromFile = new byte[(int)sizeInBytes];
+        input.read(arrayFromFile);
+        System.out.println(arrayFromFile);
 
     }
     //Task6

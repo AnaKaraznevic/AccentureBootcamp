@@ -1,4 +1,4 @@
-package ThirdDay.Vehicles;
+package Day3.Vehicles;
 
 public class Car extends Vehicle {
     public int power;

@@ -1,4 +1,4 @@
-package ThirdDay;
+package Day3;
 
 public class BankAccountNew {
 

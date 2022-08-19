@@ -1,4 +1,4 @@
-package ThirdDay.Vehicles;// Create a base class of a ThirdDay.Vehicles.Vehicle,
+package Day3.Vehicles;// Create a base class of a ThirdDay.Vehicles.Vehicle,
 // then create a ThirdDay.Vehicles.Car class which inherits from the ThirdDay.Vehicles.Vehicle class.
 // Also, create another class, a specific type of ThirdDay.Vehicles.Car that inherits from the ThirdDay.Vehicles.Car class.
 // Program should be able to handle steering, changing gears, and drive (having speed in other words).

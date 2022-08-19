@@ -1,4 +1,4 @@
-package ThirdDay.Vehicles;
+package Day3.Vehicles;
 
 public class SportCar extends Car {
 

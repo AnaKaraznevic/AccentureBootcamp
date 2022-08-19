@@ -1,4 +1,4 @@
-package ThirdDay;/*
+package Day3;/*
 create a class "ThirdDay.BankAccount" with property "balance" (should be decimal number)
     * create empty default constructor for it
     * create a constructor with parameter for setting balance.

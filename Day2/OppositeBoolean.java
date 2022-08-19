@@ -1,4 +1,4 @@
-package SecondDay;/*
+package Day2;/*
 Write a program which reads boolean value from user and prints out the opposite value:
     Example input:
         Enter boolean value: true

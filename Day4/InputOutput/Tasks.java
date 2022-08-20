@@ -92,6 +92,48 @@ public class Tasks {
         input.read(arrayFromFile);
         System.out.println(arrayFromFile);
 
+        //Task11
+        BufferedReader br = null;
+        String strLine = "";
+        try{
+            br = new BufferedReader(new FileReader(stringPath1));
+            while ((strLine = br.readLine())!= null){
+                System.out.println(strLine);
+            }
+            br.close();
+        }
+        catch(FileNotFoundException e){
+            System.err.println("File not found");
+        }
+        catch(IOException e){
+            System.err.println("Unable to read the file");
+        }
+
+        //Task15
+        StringBuilder sb = new StringBuilder();
+        try{
+            String fileName = "/Users/ania/Documents/task15.txt";
+            FileWriter fw = new FileWriter(fileName);
+            fw.write("Very interesting task\n");
+            fw.write("I want to the bed\n");
+            fw.write("Sleeping\n");
+            fw.close();
+
+            BufferedReader bReader = new BufferedReader(new FileReader(fileName));
+            String line = bReader.readLine();
+            while (line != null){
+                sb.append(line);
+                sb.append(System.lineSeparator());
+                line = bReader.readLine();
+            }
+            bReader.close();
+            System.out.println(sb);
+        }
+        catch (IOException e){
+            System.err.println("Ups :)");
+        }
+
+
     }
     //Task6
     public static long FilesCompareByByte(Path path1, Path path2) throws IOException {
